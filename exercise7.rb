@@ -30,3 +30,13 @@ puts "Delete the 2nd cohort and redisplay the hash."
 students.delete(:cohort2)
 
 bitmaker(students)
+
+# 7. Bonus: Calculate the total number of students
+#    across all cohorts using each and
+#    a variable to keep track of the total.
+#    Output the result.
+sum = 0
+students.each do |k, v|
+  sum += v
+end
+puts "#{sum.to_i} is total number of student."
