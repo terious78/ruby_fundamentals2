@@ -18,3 +18,15 @@ bitmaker(students)
 # 4. Use the 'key' methods output all of the cohort names.
 puts "Output all of the cohort names."
 puts "The names of cohors are #{students.keys}."
+
+# 5.  Increase each cohort size
+#     by 5% and display the new results
+students.each do |k, v|
+  puts "#{(v*1.05).to_i} is the total students in #{k}."
+end
+
+# 6. Delete the 2nd cohort and redisplay the hash.
+puts "Delete the 2nd cohort and redisplay the hash."
+students.delete(:cohort2)
+
+bitmaker(students)
